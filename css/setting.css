@@ -1,0 +1,270 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  font-family: iran-Sans;
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+}
+.title {
+  font-size: 48px;
+  color: #353535;
+}
+.title::selection {
+  color: whitesmoke;
+  background: #2b2b2b;
+}
+.mini {
+  font-size: 24px;
+  margin-top: 10px;
+}
+.img-50 {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 10px !important;
+  left: 10px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #353535;
+  cursor: pointer;
+}
+
+.line {
+  border: 1.4px dashed #2b2b2b;
+  width: 50px;
+  margin: 35px 0;
+  margin-bottom: 15px;
+}
+@font-face {
+  font-family: iran-Sans;
+  src: url(../IRANSansX-Regular.woff);
+}
+/*slides setting*/
+.line-2 {
+  display: none;
+}
+.skill-2 {
+  display: none;
+}
+.process {
+  background-color: unset !important;
+}
+.orange {
+  background-color: orangered !important;
+}
+.blue {
+  background-color: #0a64e1 !important;
+}
+.lightblue {
+  background-color: #6ea1e7 !important;
+}
+.perpule {
+  background-color: orchid !important;
+}
+.yellow {
+  background-color: yellow !important;
+}
+.coral {
+  background-color: coral !important;
+}
+.cir {
+  background-color: lavenderblush !important;
+  outline: none !important;
+  border: none !important;
+  padding: 8px !important;
+}
+
+div#home {
+  width: 100%;
+  height: 100vh;
+  background: url(./img/background-1.jpg) no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  overflow: auto;
+}
+div#about {
+  width: 100%;
+  height: 100vh;
+  background: url(./img/background-2.png) no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  border-top: 2px solid #2b2b2b;
+  position: relative;
+  direction: rtl;
+  overflow: auto;
+  padding: 10px 10px;
+}
+.fullpart {
+  width: 100%;
+}
+.contact-us{
+  width:120px !important ;
+}
+.contact-us:hover{
+  width:130px !important ;
+
+}
+
+div#contact {
+  direction: rtl;
+  width: 100%;
+  height: 100vh;
+  background: url(./img/background-3.jpg) no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  border-top: 2px solid #2b2b2b;
+  position: relative;
+  overflow: auto;
+}
+div#gallery {
+  overflow: auto;
+  width: 100%;
+  height: 100vh;
+  background: url(./img/background-5.avif) no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  border-top: 2px solid #2b2b2b;
+  position: relative;
+}
+.black {
+  fill: #2b2b2b !important;
+  color: #2b2b2b !important;
+}
+.reletive {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+/*active order*/
+.active * {
+  background-color: #2b2b2b !important;
+}
+input:focus,
+input,
+textarea,
+textarea:focus {
+  border: none !important;
+  outline: none !important;
+  direction: rtl;
+  padding-right: 5px !important;
+  padding-top: 5px !important;
+  font-size: 16px;
+}
+input::selection {
+  background-color: #404040;
+  color: whitesmoke;
+}
+.white {
+  color: whitesmoke;
+  fill: whitesmoke;
+}
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 5px;
+}
+.block {
+  display: block !important;
+}
+.disable {
+  cursor: default !important;
+  background-color: #404040 !important;
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  bottom: 7.5px;
+  left: 4%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 300ms linear;
+}
+.disable:hover {
+  cursor: default !important;
+  background-color: #404040 !important;
+  width: 45px !important;
+}
+img {
+  object-fit: contain;
+}
+.green {
+  background-color: green !important  ;
+}
+.w-80 {
+  width: 80% !important;
+}
+
+.none {
+  display: none !important;
+}
+.flex {
+  display: flex !important;
+}
+.block1 {
+  display: block !important;
+  transition: all 300ms linear;
+  animation-name: right-pop;
+  animation-duration: 700ms;
+}
+@keyframes right-pop {
+  0% {
+    right: -45%;
+  }
+  100% {
+    right: 0;
+  }
+}
+@keyframes timeout {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
+.PTL {
+  animation: forwards PTLanimation 700ms;
+  z-index: 9999;
+  display:  block !important;
+}
+@keyframes PTLanimation {
+  0% {
+    right: -80%;
+    top: 0;
+    bottom: 0;
+  }
+  2% {
+    top: 0;
+    bottom: 0;
+  }
+  100% {
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+}
+.light{
+  border:gainsboro 1px dashed !important;
+  width:100px;
+}
+.PTR {
+  display: block !important;
+  right:0 ;
+  animation:1200ms poptoright forwards;
+}
+
+@keyframes poptoright {
+  0% {
+    right:0;
+  }
+  100% {
+    right:-80%;
+  }
+}
